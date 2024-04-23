@@ -89,6 +89,14 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 	float k = { 4.0f };
 
 
+	Vector3 resultAdd = Add(v1, v2);
+	Vector3 resultSubtract = Subtract(v1, v2);
+	Vector3 resultMultiply = Multiply(k, v1);
+	float resultDot = Dot(v1, v2);
+	float resultLength = Length(v1);
+	Vector3 resultNormalize = Normalize(v2);
+
+
 	// ウィンドウの×ボタンが押されるまでループ
 	while (Novice::ProcessMessage() == 0) {
 		// フレームの開始
@@ -101,14 +109,6 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, int) {
 		///
 		/// ↓更新処理ここから
 		///
-
-
-		Vector3 resultAdd = Add(v1, v2);
-		Vector3 resultSubtract = Subtract(v1, v2);
-		Vector3 resultMultiply = Multiply(k, v1);
-		float resultDot = Dot(v1, v2);
-		float resultLength = Length(v1);
-		Vector3 resultNormalize = Normalize(v2);
 
 
 		///
